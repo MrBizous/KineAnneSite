@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Témoignages — Anne Ouellet-Demers</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/output.css" />
+</head>
+<body class="bg-[#F5F0E8] text-[#1C1C1C] font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="flex items-center justify-between px-8 py-5 bg-[#F5F0E8] border-b border-[#2D4A3E]/10">
+    <a href="index.html">
+      <img src="images/logoAnne.png" alt="Anne Ouellet-Demers" class="h-12" />
+    </a>
+    <ul class="hidden md:flex items-center gap-10 text-sm font-light tracking-wide text-[#2D4A3E]">
+      <li><a href="index.html" class="hover:opacity-60 transition">Accueil</a></li>
+      <li><a href="bio.html" class="hover:opacity-60 transition">Bio</a></li>
+      <li><a href="temoignages.html" class="opacity-60">Témoignages</a></li>
+    </ul>
+    <a href="formulaire.html"
+       class="hidden md:inline-block bg-[#2D4A3E] text-[#F5F0E8] text-sm font-light tracking-widest px-6 py-3 rounded-full hover:bg-[#3D7A7A] transition">
+      Prendre un rendez-vous
+    </a>
+    <button class="md:hidden text-[#2D4A3E]" id="menuBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="hidden md:hidden bg-[#F5F0E8] px-8 py-6 flex flex-col gap-6 text-[#2D4A3E] text-sm font-light" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="bio.html">Bio</a>
+    <a href="temoignages.html">Témoignages</a>
+    <a href="formulaire.html" class="bg-[#2D4A3E] text-[#F5F0E8] px-6 py-3 rounded-full text-center">
+      Prendre un rendez-vous
+    </a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="bg-[#2D4A3E] px-8 md:px-16 py-24 text-center">
+    <p class="text-[#3D7A7A] text-sm font-light tracking-[0.3em] uppercase mb-4">
+      Ils ont consulté Anne
+    </p>
+    <h1 class="text-[#F5F0E8] text-5xl md:text-6xl font-light"
+        style="font-family: 'Cormorant Garamond', serif;">
+      Témoignages
+    </h1>
+  </section>
+
+  <!-- TESTIMONIALS GRID -->
+  <section class="max-w-6xl mx-auto px-8 md:px-16 py-24">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-2xl p-10 flex flex-col gap-6">
+        <p class="text-[#2D4A3E] text-4xl font-light"
+           style="font-family: 'Cormorant Garamond', serif;">"</p>
+        <p class="text-[#1C1C1C]/70 text-base font-light leading-relaxed italic">
+          Anne a complètement transformé ma façon de jouer.
+          Je n'ai plus de douleurs aux épaules depuis nos séances.
+          Son approche est unique, personnalisée et vraiment efficace.
+          Je la recommande à tous les musiciens.
+        </p>
+        <div class="flex items-center gap-4 mt-auto pt-6 border-t border-[#2D4A3E]/10">
+          <div class="w-12 h-12 rounded-full overflow-hidden bg-[#D9D4C7]">
+            <img src="images/client-philipp.jpg" alt="Philipp"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <p class="text-[#2D4A3E] text-sm font-light tracking-widest uppercase">Philipp</p>
+            <p class="text-[#3D7A7A] text-xs font-light">Guitariste</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-2xl p-10 flex flex-col gap-6">
+        <p class="text-[#2D4A3E] text-4xl font-light"
+           style="font-family: 'Cormorant Garamond', serif;">"</p>
+        <p class="text-[#1C1C1C]/70 text-base font-light leading-relaxed italic">
+          Grâce à Anne, j'ai pu reprendre le violon après une blessure
+          que je croyais permanente. Elle a su identifier exactement
+          d'où venait mon problème et m'a donné les outils pour m'en sortir.
+          Elle est exceptionnelle.
+        </p>
+        <div class="flex items-center gap-4 mt-auto pt-6 border-t border-[#2D4A3E]/10">
+          <div class="w-12 h-12 rounded-full overflow-hidden bg-[#D9D4C7]">
+            <img src="images/client-sophie.jpg" alt="Sophie"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <p class="text-[#2D4A3E] text-sm font-light tracking-widest uppercase">Sophie</p>
+            <p class="text-[#3D7A7A] text-xs font-light">Violoniste</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-2xl p-10 flex flex-col gap-6">
+        <p class="text-[#2D4A3E] text-4xl font-light"
+           style="font-family: 'Cormorant Garamond', serif;">"</p>
+        <p class="text-[#1C1C1C]/70 text-base font-light leading-relaxed italic">
+          Une approche unique et vraiment personnalisée. Anne comprend
+          les besoins spécifiques des musiciens comme personne d'autre.
+          Après seulement quelques séances, je joue sans douleur
+          pour la première fois depuis des années.
+        </p>
+        <div class="flex items-center gap-4 mt-auto pt-6 border-t border-[#2D4A3E]/10">
+          <div class="w-12 h-12 rounded-full overflow-hidden bg-[#D9D4C7]">
+            <img src="images/client-anastasiah.jpg" alt="Anastasiah"
+                 class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <p class="text-[#2D4A3E] text-sm font-light tracking-widest uppercase">Anastasiah</p>
+            <p class="text-[#3D7A7A] text-xs font-light">Pianiste</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 — CTA card -->
+      <div class="bg-[#2D4A3E] rounded-2xl p-10 flex flex-col justify-center items-center text-center gap-6">
+        <p class="text-[#F5F0E8]/70 text-sm font-light tracking-[0.3em] uppercase">
+          Votre tour
+        </p>
+        <h2 class="text-[#F5F0E8] text-3xl md:text-4xl font-light leading-snug"
+            style="font-family: 'Cormorant Garamond', serif;">
+          Prêt à jouer<br/><em>sans douleur ?</em>
+        </h2>
+        <p class="text-[#F5F0E8]/60 text-sm font-light leading-relaxed max-w-xs">
+          Prenez rendez-vous avec Anne et commencez votre parcours vers
+          une pratique musicale saine.
+        </p>
+        <a href="formulaire.html"
+           class="inline-block border border-[#F5F0E8]/40 text-[#F5F0E8] text-sm font-light tracking-widest px-8 py-4 rounded-full hover:bg-[#F5F0E8] hover:text-[#2D4A3E] transition duration-300">
+          Prendre un rendez-vous
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#1C1C1C] text-[#F5F0E8] px-8 md:px-16 py-16">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="flex flex-col gap-4">
+        <img src="images/logoAnne.png" alt="Anne Ouellet-Demers" class="h-10 w-auto brightness-0 invert" />
+        <p class="text-[#F5F0E8]/50 text-sm font-light leading-relaxed max-w-xs">
+          Kinésiologue spécialisée dans la santé des musiciens.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <p class="text-xs font-light tracking-[0.3em] uppercase text-[#3D7A7A] mb-2">Navigation</p>
+        <a href="index.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Accueil</a>
+        <a href="bio.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Bio</a>
+        <a href="temoignages.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Témoignages</a>
+        <a href="formulaire.html" class="text-sm font-light text-[#F5F0E8]/70

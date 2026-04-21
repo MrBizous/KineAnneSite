@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rendez-vous — Anne Ouellet-Demers</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/output.css" />
+</head>
+<body class="bg-[#F5F0E8] text-[#1C1C1C] font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="flex items-center justify-between px-8 py-5 bg-[#F5F0E8] border-b border-[#2D4A3E]/10">
+    <a href="index.html">
+      <img src="images/logoAnne.png" alt="Anne Ouellet-Demers" class="h-12" />
+    </a>
+    <ul class="hidden md:flex items-center gap-10 text-sm font-light tracking-wide text-[#2D4A3E]">
+      <li><a href="index.html" class="hover:opacity-60 transition">Accueil</a></li>
+      <li><a href="bio.html" class="hover:opacity-60 transition">Bio</a></li>
+      <li><a href="temoignages.html" class="hover:opacity-60 transition">Témoignages</a></li>
+    </ul>
+    <a href="formulaire.html"
+       class="hidden md:inline-block bg-[#2D4A3E] text-[#F5F0E8] text-sm font-light tracking-widest px-6 py-3 rounded-full hover:bg-[#3D7A7A] transition">
+      Prendre un rendez-vous
+    </a>
+    <button class="md:hidden text-[#2D4A3E]" id="menuBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="hidden md:hidden bg-[#F5F0E8] px-8 py-6 flex flex-col gap-6 text-[#2D4A3E] text-sm font-light" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="bio.html">Bio</a>
+    <a href="temoignages.html">Témoignages</a>
+    <a href="formulaire.html" class="bg-[#2D4A3E] text-[#F5F0E8] px-6 py-3 rounded-full text-center">
+      Prendre un rendez-vous
+    </a>
+  </div>
+
+  <!-- MAIN — Two column layout -->
+  <main class="min-h-screen grid grid-cols-1 md:grid-cols-2">
+
+    <!-- Left — Info panel -->
+    <div class="bg-[#2D4A3E] px-10 md:px-16 py-24 flex flex-col justify-center">
+
+      <p class="text-[#3D7A7A] text-sm font-light tracking-[0.3em] uppercase mb-6">
+        Contactez Anne
+      </p>
+      <h1 class="text-[#F5F0E8] text-5xl md:text-6xl font-light leading-snug mb-8"
+          style="font-family: 'Cormorant Garamond', serif;">
+        Prenons<br/>
+        <em>rendez-vous.</em>
+      </h1>
+      <p class="text-[#F5F0E8]/70 text-base font-light leading-relaxed mb-12 max-w-sm">
+        Remplissez le formulaire et Anne vous contactera dans les
+        24 heures pour confirmer votre rendez-vous.
+      </p>
+
+      <!-- Info items -->
+      <div class="flex flex-col gap-6">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-[#F5F0E8]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#3D7A7A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-[#F5F0E8] text-sm font-light">Montréal, Québec</p>
+            <p class="text-[#F5F0E8]/50 text-xs font-light mt-1">Consultations en personne et en ligne</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-[#F5F0E8]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#3D7A7A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-[#F5F0E8] text-sm font-light">Lundi — Vendredi</p>
+            <p class="text-[#F5F0E8]/50 text-xs font-light mt-1">9h00 — 18h00</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-[#F5F0E8]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#3D7A7A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-[#F5F0E8] text-sm font-light">anne@kinesiologie.ca</p>
+            <p class="text-[#F5F0E8]/50 text-xs font-light mt-1">Réponse sous 24h</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right — Form -->
+    <div class="bg-[#F5F0E8] px-10 md:px-16 py-24 flex flex-col justify-center">
+
+      <div id="formContainer">
+        <p class="text-[#3D7A7A] text-sm font-light tracking-[0.3em] uppercase mb-8">
+          Formulaire
+        </p>
+
+        <div class="flex flex-col gap-6">
+
+          <!-- Name -->
+          <div class="flex flex-col gap-2">
+            <label class="text-[#2D4A3E] text-xs font-light tracking-widest uppercase">
+              Nom complet *
+            </label>
+            <input type="text" id="name" placeholder="Votre nom"
+                   class="bg-transparent border-b border-[#2D4A3E]/30 text-[#1C1C1C] text-sm font-light py-3 placeholder:text-[#1C1C1C]/30 focus:outline-none focus:border-[#2D4A3E] transition" />
+          </div>
+
+          <!-- Email -->
+          <div class="flex flex-col gap-2">
+            <label class="text-[#2D4A3E] text-xs font-light tracking-widest uppercase">
+              Courriel *
+            </label>
+            <input type="email" id="email" placeholder="votre@courriel.com"
+                   class="bg-transparent border-b border-[#2D4A3E]/30 text-[#1C1C1C] text-sm font-light py-3 placeholder:text-[#1C1C1C]/30 focus:outline-none focus:border-[#2D4A3E] transition" />
+          </div>
+
+          <!-- Phone -->
+          <div class="flex flex-col gap-2">
+            <label class="text-[#2D4A3E] text-xs font-light tracking-widest uppercase">
+              Téléphone
+            </label>
+            <input type="tel" id="phone" placeholder="(514) 123-4567"
+                   class="bg-transparent border-b border-[#2D4A3E]/30 text-[#1C1C1C] text-sm font-light py-3 placeholder:text-[#1C1C1C]/30 focus:outline-none focus:border-[#2D4A3E] transition" />
+          </div>
+
+          <!-- Subject -->
+          <div class="flex flex-col gap-2">
+            <label class="text-[#2D4A3E] text-xs font-light tracking-widest uppercase">
+              Sujet *
+            </label>
+            <select id="subject"
+                    class="bg-transparent border-b border-[#2D4A3E]/30 text-[#1C1C1C] text-sm font-light py-3 focus:outline-none focus:border-[#2D4A3E] transition appearance-none cursor-pointer">
+              <option value="" disabled selected class="text-[#1C1C1C]/30">Choisissez un sujet</option>
+              <option value="douleur">Douleur musculaire</option>
+              <option value="posture">Évaluation posturale</option>
+              <option value="blessure">Réhabilitation blessure</option>
+              <option value="prevention">Prévention</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="flex flex-col gap-2">
+            <label class="text-[#2D4A3E] text-xs font-light tracking-widest uppercase">
+              Message
+            </label>
+            <textarea id="message" rows="4" placeholder="Décrivez votre situation..."
+                      class="bg-transparent border-b border-[#2D4A3E]/30 text-[#1C1C1C] text-sm font-light py-3 placeholder:text-[#1C1C1C]/30 focus:outline-none focus:border-[#2D4A3E] transition resize-none"></textarea>
+          </div>
+
+          <!-- Error message -->
+          <p id="errorMsg" class="hidden text-red-500 text-xs font-light">
+            Veuillez remplir tous les champs obligatoires (*).
+          </p>
+
+          <!-- Submit -->
+          <button onclick="handleSubmit()"
+                  class="mt-4 bg-[#2D4A3E] text-[#F5F0E8] text-sm font-light tracking-widest px-8 py-4 rounded-full hover:bg-[#3D7A7A] transition duration-300 self-start">
+            Envoyer le message
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Success message (hidden by default) -->
+      <div id="successMsg" class="hidden flex flex-col items-start gap-6">
+        <div class="w-16 h-16 rounded-full bg-[#2D4A3E]/10 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#2D4A3E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h2 class="text-[#2D4A3E] text-4xl font-light"
+            style="font-family: 'Cormorant Garamond', serif;">
+          Message envoyé !
+        </h2>
+        <p class="text-[#1C1C1C]/60 text-base font-light leading-relaxed max-w-sm">
+          Merci ! Anne vous contactera dans les 24 heures pour confirmer
+          votre rendez-vous.
+        </p>
+        <a href="index.html"
+           class="inline-block border border-[#2D4A3E] text-[#2D4A3E] text-sm font-light tracking-widest px-8 py-4 rounded-full hover:bg-[#2D4A3E] hover:text-[#F5F0E8] transition duration-300">
+          Retour à l'accueil
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#1C1C1C] text-[#F5F0E8] px-8 md:px-16 py-16">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="flex flex-col gap-4">
+        <img src="images/logoAnne.png" alt="Anne Ouellet-Demers" class="h-10 w-auto brightness-0 invert" />
+        <p class="text-[#F5F0E8]/50 text-sm font-light leading-relaxed max-w-xs">
+          Kinésiologue spécialisée dans la santé des musiciens.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <p class="text-xs font-light tracking-[0.3em] uppercase text-[#3D7A7A] mb-2">Navigation</p>
+        <a href="index.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Accueil</a>
+        <a href="bio.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Bio</a>
+        <a href="temoignages.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Témoignages</a>
+        <a href="formulaire.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Rendez-vous</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <p class="text-xs font-light tracking-[0.3em] uppercase text-[#3D7A7A] mb-2">Restez informé</p>
+        <p class="text-[#F5F0E8]/50 text-sm font-light">Inscrivez-vous à l'infolettre d'Anne.</p>
+        <div class="flex gap-2">
+          <input type="email" placeholder="votre@courriel.com"
+                 class="flex-1 bg-[#F5F0E8]/10 border border-[#F5F0E8]/20 text-[#F5F0E8] text-sm font-light px-4 py-3 rounded-full placeholder:text-[#F5F0E8]/30 focus:outline-none focus:border-[#3D7A7A]" />
+          <button class="bg-[#2D4A3E] text-[#F5F0E8] text-sm px-5 py-3 rounded-full hover:bg-[#3D7A7A] transition">OK</button>
+        </div>
+        <div class="flex gap-4 mt-2">
+          <a href="#" class="text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition text-sm font-light">Instagram</a>
+          <a href="#" class="text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition text-sm font-light">Facebook</a>
+          <a href="#" class="text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition text-sm font-light">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-16 pt-8 border-t border-[#F5F0E8]/10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-[#F5F0E8]/30 text-xs font-light">© 2026 Anne Ouellet-Demers. Tous droits réservés.</p>
+      <p class="text-[#F5F0E8]/30 text-xs font-light">Kinésiologie — Santé des musiciens</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Form submission
+    function handleSubmit() {
+      const name = document.getElementById('n

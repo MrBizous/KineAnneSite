@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anne Ouellet-Demers — Kinésiologue</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;1,300&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind output -->
+  <link rel="stylesheet" href="css/output.css" />
+</head>
+<body class="bg-[#F5F0E8] text-[#1C1C1C] font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="flex items-center justify-between px-8 py-5 bg-[#F5F0E8] border-b border-[#2D4A3E]/10">
+
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="images/logoAnne.png" alt="Anne Ouellet-Demers" class="h-12" />
+    </a>
+
+    <!-- Nav Links -->
+    <ul class="hidden md:flex items-center gap-10 text-sm font-light tracking-wide text-[#2D4A3E]">
+      <li><a href="index.html" class="hover:opacity-60 transition">Accueil</a></li>
+      <li><a href="bio.html" class="hover:opacity-60 transition">Bio</a></li>
+      <li><a href="temoignages.html" class="hover:opacity-60 transition">Témoignages</a></li>
+    </ul>
+
+    <!-- CTA Button -->
+    <a href="formulaire.html"
+       class="hidden md:inline-block bg-[#2D4A3E] text-[#F5F0E8] text-sm font-light tracking-widest px-6 py-3 rounded-full hover:bg-[#3D7A7A] transition">
+      Prendre un rendez-vous
+    </a>
+
+    <!-- Mobile Hamburger (we'll wire this up next) -->
+    <button class="md:hidden text-[#2D4A3E]" id="menuBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </nav>
+
+    <!-- HERO SECTION -->
+<section class="relative min-h-screen flex items-end bg-[#2D4A3E] overflow-hidden">
+
+    <!-- Background photo placeholder (replace src with Anne's real photo later) -->
+    <div class="absolute inset-0 bg-[#2D4A3E]">
+      <img
+        src="images/20181013_182524_HDR.jpg"
+        alt="Anne Ouellet-Demers"
+        class="w-50 h-50 object-cover opacity-70"
+      />
+    </div>
+
+    <!-- Hero text content — sits at the bottom left -->
+    <div class="relative z-10 px-8 md:px-16 pb-16 md:pb-24 max-w-2xl">
+
+      <p class="text-[#F5F0E8]/70 text-sm font-light tracking-[0.3em] uppercase mb-4">
+        Kinésiologue — Spécialiste des musiciens
+      </p>
+
+      <h1 class="text-[#F5F0E8] text-5xl md:text-7xl font-light leading-tight mb-8"
+          style="font-family: 'Cormorant Garamond', serif;">
+        Jouez sans<br/>
+        <em>douleur.</em>
+      </h1>
+
+      <p class="text-[#F5F0E8]/80 text-base font-light leading-relaxed mb-10 max-w-md">
+        Si vous sentez des douleurs, prenez un rendez-vous sans plus tarder.
+      </p>
+
+      <a href="formulaire.html"
+         class="inline-block border border-[#F5F0E8] text-[#F5F0E8] text-sm font-light tracking-widest px-8 py-4 rounded-full hover:bg-[#F5F0E8] hover:text-[#2D4A3E] transition duration-300">
+        Prendre un rendez-vous
+      </a>
+
+    </div>
+
+  </section>
+
+    <!-- QUI EST ANNE SECTION -->
+<section class="flex flex-col md:flex-row min-h-[70vh]">
+
+    <!-- Left — Photo -->
+    <div class="w-full md:w-1/2 bg-[#D9D4C7] min-h-[400px] md:min-h-full">
+      <img
+        src="images/anne_portrait (1).jpg"
+        alt="Anne Ouellet-Demers"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Right — Text -->
+    <div class="w-full md:w-1/2 bg-[#F5F0E8] flex items-center px-10 md:px-16 py-16">
+      <div class="max-w-md">
+
+        <p class="text-[#3D7A7A] text-sm font-light tracking-[0.3em] uppercase mb-4">
+          À propos
+        </p>
+
+        <h2 class="text-[#2D4A3E] text-4xl md:text-5xl font-light leading-snug mb-6"
+            style="font-family: 'Cormorant Garamond', serif;">
+          Qui est Anne ?
+        </h2>
+
+        <p class="text-[#1C1C1C]/70 text-base font-light leading-relaxed mb-6">
+          Anne Ouellet-Demers est kinésiologue spécialisée dans la santé des musiciens.
+          Elle comprend les exigences physiques uniques de la pratique musicale et
+          accompagne les musiciens vers un jeu sans douleur et sans blessure.
+        </p>
+
+        <p class="text-[#1C1C1C]/70 text-base font-light leading-relaxed mb-10">
+          Qu'elle peut faire pour toi — évaluer ta posture, corriger tes habitudes
+          de mouvement, et bâtir un programme personnalisé selon ton instrument.
+        </p>
+
+        <a href="bio.html"
+           class="inline-block bg-[#2D4A3E] text-[#F5F0E8] text-sm font-light tracking-widest px-8 py-4 rounded-full hover:bg-[#3D7A7A] transition duration-300">
+          En savoir plus
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- TÉMOIGNAGES SECTION -->
+<section class="bg-[#2D4A3E] py-24 px-8 md:px-16">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <p class="text-[#3D7A7A] text-sm font-light tracking-[0.3em] uppercase mb-4">
+        Ce qu'ils disent
+      </p>
+      <h2 class="text-[#F5F0E8] text-4xl md:text-5xl font-light"
+          style="font-family: 'Cormorant Garamond', serif;">
+        Témoignages
+      </h2>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Card 1 -->
+      <div class="bg-[#F5F0E8]/10 rounded-2xl p-8 flex flex-col items-center text-center">
+        <div class="w-24 h-24 rounded-full overflow-hidden mb-6 border-2 border-[#F5F0E8]/30">
+          <img src="images/client-philipp.jpg" alt="Philipp"
+               class="w-full h-full object-cover" />
+        </div>
+        <p class="text-[#F5F0E8]/80 text-sm font-light leading-relaxed mb-6 italic">
+          "Anne a complètement transformé ma façon de jouer.
+          Je n'ai plus de douleurs aux épaules depuis nos séances."
+        </p>
+        <p class="text-[#F5F0E8] text-sm font-light tracking-widest uppercase">
+          Philipp
+        </p>
+        <p class="text-[#3D7A7A] text-xs font-light tracking-wide mt-1">
+          Guitariste
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#F5F0E8]/10 rounded-2xl p-8 flex flex-col items-center text-center">
+        <div class="w-24 h-24 rounded-full overflow-hidden mb-6 border-2 border-[#F5F0E8]/30">
+          <img src="images/client-sophie.jpg" alt="Sophie"
+               class="w-full h-full object-cover" />
+        </div>
+        <p class="text-[#F5F0E8]/80 text-sm font-light leading-relaxed mb-6 italic">
+          "Grâce à Anne, j'ai pu reprendre le violon après une blessure
+          que je croyais permanente. Elle est exceptionnelle."
+        </p>
+        <p class="text-[#F5F0E8] text-sm font-light tracking-widest uppercase">
+          Sophie
+        </p>
+        <p class="text-[#3D7A7A] text-xs font-light tracking-wide mt-1">
+          Violoniste
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#F5F0E8]/10 rounded-2xl p-8 flex flex-col items-center text-center">
+        <div class="w-24 h-24 rounded-full overflow-hidden mb-6 border-2 border-[#F5F0E8]/30">
+          <img src="images/client-anastasiah.jpg" alt="Anastasiah"
+               class="w-full h-full object-cover" />
+        </div>
+        <p class="text-[#F5F0E8]/80 text-sm font-light leading-relaxed mb-6 italic">
+          "Une approche unique et personnalisée. Anne comprend
+          vraiment les besoins spécifiques des musiciens."
+        </p>
+        <p class="text-[#F5F0E8] text-sm font-light tracking-widest uppercase">
+          Anastasiah
+        </p>
+        <p class="text-[#3D7A7A] text-xs font-light tracking-wide mt-1">
+          Pianiste
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Link to full testimonials page -->
+    <div class="text-center mt-16">
+      <a href="temoignages.html"
+         class="inline-block border border-[#F5F0E8]/40 text-[#F5F0E8] text-sm font-light tracking-widest px-8 py-4 rounded-full hover:bg-[#F5F0E8] hover:text-[#2D4A3E] transition duration-300">
+        Voir tous les témoignages
+      </a>
+    </div>
+
+  </section>
+
+  <!-- MOBILE MENU (hidden by default) -->
+  <div class="hidden md:hidden bg-[#F5F0E8] px-8 py-6 flex flex-col gap-6 text-[#2D4A3E] text-sm font-light" id="mobileMenu">
+    <a href="index.html">Accueil</a>
+    <a href="bio.html">Bio</a>
+    <a href="temoignages.html">Témoignages</a>
+    <a href="formulaire.html" class="bg-[#2D4A3E] text-[#F5F0E8] px-6 py-3 rounded-full text-center">
+      Prendre un rendez-vous
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+<footer class="bg-[#1C1C1C] text-[#F5F0E8] px-8 md:px-16 py-16">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- Col 1 — Logo + tagline -->
+      <div class="flex flex-col gap-4">
+        <img src="images/logoAnne.png" alt="Anne Ouellet-Demers" class="h-auto w-auto brightness-0 invert" />
+        <p class="text-[#F5F0E8]/50 text-sm font-light leading-relaxed max-w-xs">
+          Kinésiologue spécialisée dans la santé des musiciens.
+        </p>
+      </div>
+
+      <!-- Col 2 — Navigation -->
+      <div class="flex flex-col gap-4">
+        <p class="text-xs font-light tracking-[0.3em] uppercase text-[#3D7A7A] mb-2">
+          Navigation
+        </p>
+        <a href="index.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Accueil</a>
+        <a href="bio.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Bio</a>
+        <a href="temoignages.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Témoignages</a>
+        <a href="formulaire.html" class="text-sm font-light text-[#F5F0E8]/70 hover:text-[#F5F0E8] transition">Rendez-vous</a>
+      </div>
+
+      <!-- Col 3 — Newsletter + Social -->
+      <div class="flex flex-col gap-4">
+        <p class="text-xs font-light tracking-[0.3em] uppercase text-[#3D7A7A] mb-2">
+          Restez informé
+        </p>
+        <p class="text-[#F5F0E8]/50 text-sm font-light">
+          Inscrivez-vous à l'infolettre d'Anne.
+        </p>
+        <div class="flex gap-2">
+          <input
+            type="email"
+            placeholder="votre@courriel.com"
+            class="flex-1 bg-[#F5F0E8]/10 border border-[#F5F0E8]/20 text-[#F5F0E8] text-sm font-light px-4 py-3 rounded-full placeholder:text-[#F5F0E8]/30 focus:outline-none focus:border-[#3D7A7A]"
+          />
+          <button class="bg-[#2D4A3E] text-[#F5F0E8] text-sm px-5 py-3 rounded-full hover:bg-[#3D7A7A] transition">
+            OK
+          </button>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-4 mt-2">
+          <a href="#" class="text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition text-sm font-light tracking-wide">Instagram</a>
+          <a href="#" class="text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition text-sm font-light tracking-wide">Facebook</a>
+          <a href="#" class="text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition text-sm font-light tracking-wide">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="max-w-6xl mx-auto mt-16 pt-8 border-t border-[#F5F0E8]/10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-[#F5F0E8]/30 text-xs font-light">
+        © 2026 Anne Ouellet-Demers. Tous droits réservés.
+      </p>
+      <p class="text-[#F5F0E8]/30 text-xs font-light">
+        Kinésiologie — Santé des musiciens
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- PAGE CONTENT GOES HERE -->
+
+  <!-- SIMPLE JS FOR MOBILE MENU -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
